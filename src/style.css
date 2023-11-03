@@ -13,6 +13,15 @@ body {
     
 }
 
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .square {
     background: #fff;
     border: 1px solid #999;
@@ -32,4 +41,9 @@ body {
     clear: both;
     content: '';
     display: table;
+}
+
+.status {
+    text-align: center;
+    margin-top: 20px;
 }
