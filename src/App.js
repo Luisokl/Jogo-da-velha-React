@@ -31,13 +31,14 @@ export default function Board() {
   const winner = calculaWinner(squares);
   let status;
   if (winner) {
-    status = "Vencedor:" + winner;
+    status = "Vencedor:   " + winner;
   } else {
-    status = "Proximo Jogador:" + (xIsNext? "X" : "O"); 
+    status = "Proximo Jogador:   " + (xIsNext? "X" : "O"); 
   }
 
   return (
     <>
+      <h1 className="title">Jogo da Velha</h1>
       <div className="container">
         <div className="board-row">
           <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
